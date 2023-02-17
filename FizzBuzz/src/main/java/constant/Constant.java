@@ -10,5 +10,5 @@ package constant;
  *
  */
 public class Constant {
-  public final String headStr = "数値を入力してください。";
+  public static final String headStr = "数値を入力してください。";
 }
