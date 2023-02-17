@@ -27,9 +27,13 @@ public class Main {
 
     // Scannerから最大値を取得する。
     int max = sc.nextInt();
-    
-    System.out.println(max);
 
+    System.out.println(Constant.maxStr + max + Constant.resultStrPrt);
+    System.out.println(Constant.resultStr);
+
+    for (int i = 1; i <= max; i++) {
+      System.out.println(i);
+    }
   }
 
 }
