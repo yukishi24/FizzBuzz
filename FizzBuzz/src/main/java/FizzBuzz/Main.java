@@ -31,9 +31,27 @@ public class Main {
     System.out.println(Constant.maxStr + max + Constant.resultStrPrt);
     System.out.println(Constant.resultStr);
 
-    for (int i = 1; i <= max; i++) {
-      System.out.println(i);
-    }
+    FizzBuzz(max);
   }
 
+  /**
+   * FizzBuzz実装メソッド
+   * 
+   * @param max
+   */
+  public static void FizzBuzz(int max) {
+    String tmp;
+    for (int i = 1; i <= max; i++) {
+      if (i % 3 == 0 && i % 5 == 0) {
+        tmp = "FizzBuzz";
+      } else if (i % 3 == 0 && i % 5 != 0) {
+        tmp = "Fizz";
+      } else if (i % 3 != 0 && i % 5 == 0) {
+        tmp = "Buzz";
+      } else {
+        tmp = Integer.valueOf(i).toString();
+      }
+      System.out.println(tmp);
+    }
+  }
 }
